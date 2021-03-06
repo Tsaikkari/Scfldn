@@ -35,11 +35,17 @@ export default class User extends BaseEntity {
   @Column({ nullable: true})
   healthCheckDate!: string
 
-  @Column({ nullable: true})
+  @Column({ nullable: true })
   dentistDate!: string
 
-  @Column({ nullable: true})
+  @Column({ nullable: true })
   gynoDate!: string
+
+  @Column({ nullable: true })
+  lastPeriod!: Date
+
+  @Column({ nullable: true })
+  cycleLength!: number
 
   @OneToOne(() => Credential, (credential) => credential.user, {
     cascade: true,
