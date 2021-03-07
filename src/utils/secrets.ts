@@ -38,7 +38,7 @@ if (prod) {
     port: 5432,
     username: 'postgres',
     password: DB_PASSWORD,
-    database: 'tindev',
+    database: 'scaffolding',
     synchronize: true,
     logging: false,
     entities: Entities,
