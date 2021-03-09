@@ -72,5 +72,5 @@ DB_PASSWORD=secret
 6. Finally, start the app:
 
 ```sh
-npm run dev
+npm start
 ```
